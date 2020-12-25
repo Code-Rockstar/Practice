@@ -1,0 +1,9 @@
+
+<button (click)="show=true">Show coursed list</button>
+ 
+
+
+<div *ngIf="show" >  
+  <app-course-list #cl='courselist'></app-course-list>   
+  <button (click)="cl.meth()">Call Meth from parent</button>
+</div>  
